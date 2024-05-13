@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+}
+
+h4{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+}
