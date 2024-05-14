@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&display=swap');
+/* css Boilarplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Kalam", cursive;
+    background: #bcbcbc;
+    color: aliceblue;
+    font-weight: 600;
+
+}
+body{
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-wraper{
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #eee;
+    -webkit-border-radius:10px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.month-name{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    background: crimson;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+.day-name{
+    width: 70%;
+    margin: 0px auto;
+    padding: 1rem 0px;
+    font-size: 1.5rem;
+    color: #11111193;
+    font-weight: 400;
+    border-bottom: 1px solid #acacac8a;
+}
+.day-number{
+    width: 70%;
+    margin: 0px auto;
+    font-size: 5rem;
+    padding: 0.5rem 0px;
+    color: #111;
+    font-weight: 600;
+    border-bottom: 1px solid #acacac8a;
+    border-left: 1px solid #acacac8a;
+    border-right: 1px solid #acacac8a;
+}
+.year{
+    width: 100%;
+    font-size: 1.2rem;
+    color: #11111193;
+    font-weight: 600;
+    padding: 1rem 0px;
+
+}
