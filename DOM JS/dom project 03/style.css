@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+/* css Boilarplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+    background: #dcdcdc;
+    color: #1d1d1d;
+    font-weight: 600;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    /* height: 65%;
+    width: 65%; */
+    top: 50%;
+    left: 50;
+    padding: 5rem;
+    transform: translate(-50% -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.center h1 {
+    font-size: 8vw;
+    letter-spacing: -3px;
+    line-height: 8vw;
+}
+
+.center strong {
+    font-weight: 600;
+    font-style: italic;
+    color: #1085df;
+}
+
+.center Span {
+    font-family: "Sevillana", cursive;
+}
+
+.center p {
+    font-size: 2.5vw;
+    text-transform: capitalize;
+}
+
+.imgdiv {
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.imgdiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem;
+    transform: translateY(100%);
+    pointer-events: none;
+    border-radius: 10px !important;
+    /* animation: card 1s infinite 0.8s linear; */
+}
+
+@keyframes card {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* media qurey for mobile responsive */
+
+@media (max-width: 600px) and (min-width: 320px) {
+
+
+    .center {
+
+        width: 90%;
+        height: 50vh;
+        margin: 0px auto;
+        padding: 2rem;
+
+    }
+
+    .center h1 {
+        font-size: 12vw;
+        letter-spacing: -3px;
+        line-height: 8vw;
+    }
+
+    .center p {
+        font-size: 3.2vw;
+        text-transform: capitalize;
+    }
+
+
+}

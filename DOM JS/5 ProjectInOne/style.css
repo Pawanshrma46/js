@@ -1,0 +1,353 @@
+/* css Boilarplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+    background: #bcbcbc;
+    color: #111;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden !important;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page1 {
+    gap: 2rem;
+    background-color: #1878ec;
+}
+
+.card {
+    height: 450px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.profile {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 15px !important;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.card h1 {
+    font-size: 28px;
+    margin: 10px 0px;
+}
+
+.card h5 {
+    font-size: 25px;
+    color: red;
+    margin: 20px;
+    font-weight: 400;
+}
+
+.btncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card button {
+    background-color: #1878ec;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.remove {
+    background-color: #c2c2c2 !important;
+    color: #111 !important;
+}
+
+.card button:hover {
+    opacity: 0.8;
+
+}
+
+.card button:focus {
+    outline: none;
+
+}
+
+
+/* second project instagram like buttons */
+.page2 {
+    background: #038782;
+}
+
+.page2 .card-container {
+    position: relative;
+    height: 500px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.page2 .user-profile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0px;
+    border-radius: 15px !important;
+    z-index: 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 15px;
+    }
+}
+
+.user-profile i {
+    color: #e60045;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.5s;
+}
+
+.user-profile span {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border-radius: 10px;
+
+}
+
+.user-profile span:hover {
+    opacity: 0.8;
+}
+
+/* ---Project 3 Custom Cursor-----------------------------------------project 3-------------------------------------------- */
+
+.page3 {
+    background: #000000;
+    color: #fff;
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8128501400560224) 0%, rgba(34, 38, 92, 0.6139705882352942) 100%), url(https://plus.unsplash.com/premium_photo-1664477039530-82203c83ec40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGZhdGhlciUyMGFuZCUyMGRhdWdodGVyJTIwaW5kaWFufGVufDB8MHwwfHx8MA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page3 h1 {
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cursor {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    mix-blend-mode: difference;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: all linear 0.05s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* -------project 3-------------------------------------------- */
+
+.page4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    flex-direction: column;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 2px solid #646464;
+    position: relative;
+    cursor: pointer;
+    /* pointer-events: none; */
+    /* overflow: hidden; */
+    /* transition: all ease 0.5s; */
+}
+
+.page4 .elem:nth-child(1) {
+    border-top: 2px solid #646464;
+}
+
+.elem h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.elem img {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all ease 0.5s;
+    mix-blend-mode: difference;
+
+
+}
+
+/* -------project- 4-------------------------------------------- */
+.page5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #96b5b2;
+}
+
+.card-p5 {
+    width: 350px;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagediv-full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.story-div {
+    width: 350px;
+    height: 100px;
+    padding: 10px 10px;
+    border-bottom: 1px dashed #676767;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.story-div::-webkit-scrollbar {
+    display: none;
+}
+
+.timebar {
+    width: 100%;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.timebar .line {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    right: 100%;
+    /* transform: translateX(-100%); */
+    bottom: 0;
+    /* transition: all 2.5s; */
+}
+
+.story {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(240, 174, 174);
+    display: inline-block;
+
+    /* overflow: hidden; */
+    /* animation: storyborder 0.2s infinite linear;
+       border-top: 2px solid red; */
+    img {
+
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+@keyframes storyborder {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
