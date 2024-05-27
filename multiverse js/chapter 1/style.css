@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+h1 {
+    padding: 1rem 2rem;
+    background: #88c7dfac;
+    border-radius: 10px;
+}

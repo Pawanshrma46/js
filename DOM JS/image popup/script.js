@@ -48,6 +48,7 @@
 
 // }, 200));
 
+
 var center = document.querySelector(".center");
 
 const myThrottling = (func, delayTime) => {
@@ -105,12 +106,12 @@ center.addEventListener(
 
         gsap.to(img, {
             y: "0",
-            duration: 0.5,
-            ease: "elastic.out(1,1)",
+            duration: 0.4,
+            ease: "expo.in",
         });
 
         gsap.to(img, {
-            y: "100%",
+            y: "110%",
             delay: 0.5,
             ease: "elastic.in(1,0.75)",
         });
@@ -118,5 +119,5 @@ center.addEventListener(
         setTimeout(function () {
             div.remove();
         }, 1000);
-    }, 100)
+    }, 120)
 );
